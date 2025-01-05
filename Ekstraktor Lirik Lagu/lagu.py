@@ -24,7 +24,7 @@ def extract_lyrics():
         req.raise_for_status()
         json_data = json.loads(req.content)
 
-        # Mengekstrak lirik
+        
         lyrics = json_data['lyrics']
         display_lyrics(lyrics)
 
